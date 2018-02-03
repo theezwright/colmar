@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   line-height: 1.3;
+  color: #4a4a4a;
 }
 h1 {
   font-size: 2.5rem;
@@ -78,7 +79,7 @@ header {
 /* Hero */
 
 .hero-container {
-  background-color: lightgrey;
+  background-color: #d8d8d8;
   padding: 32px 24px;
 }
 .hero {
@@ -100,14 +101,21 @@ header {
   padding: 24px 0;
 }
 .button {
-  background-color: darkgrey;
+  background-color: #4a4a4a;
   padding: 8px 0;
   text-align: center;
   color: white;
 }
 
 /* Hero Media Query */
-
+@media only screen and (max-width: 830px) {
+  .content h1 {
+    font-size: 1.75rem;
+  }
+  .content h3 {
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 630px) {
   .hero-container {
     padding: 0;
@@ -134,6 +142,7 @@ header {
   }
   .button {
     font-size: .85rem;
+    background-color: #9b9b9b;
   }
 }
 
@@ -163,7 +172,7 @@ header {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 40%;
-  border-left: solid 1px lightgrey;
+  border-left: solid 1px #d8d8d8;;
 }
 .side-container {
   display: flex;
@@ -174,7 +183,7 @@ header {
   margin-top: 16px;
 }
 .side-container:last-child {
-  background-color: grey;
+  background-color: #d8d8d8;;
 }
 .mobile {
   display: none;
@@ -194,7 +203,7 @@ header {
   padding: 8px 0;
 }
 .link {
-  color: mediumblue;
+  color: #0099ff;
   padding-top: 8px;
 }
 
@@ -222,6 +231,12 @@ header {
     padding-left: 16px;
     width: 100%;
 }
+  .side-container h3 {
+    font-size: 1rem;
+  }
+  .side-container p {
+    font-size: 0.70rem;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -245,12 +260,15 @@ header {
     padding-left: 16px;
     width: 100%;
 }
+.side-container:last-child {
+  background-color: white;
+}
 }
 
 /* Courses Section */
 
 .learning-container {
-  background-color: lightgrey;
+  background-color: #eaebec;
   margin: auto;
   padding: 0 72px;
 }
@@ -314,7 +332,7 @@ header {
       border: none;
       width: 100%;
       height: auto;
-      background-color: lightgrey;
+      background-color: #d8d8d8;
     }
     .mobile-course {
       padding: 16px 0 24px 16px;
@@ -358,7 +376,7 @@ header {
   margin-top: 32px;
 }
 .thesis-side-container:first-child {
-  background-color: grey;
+  background-color: #d8d8d8;
 }
 .thesis-image {
   width: 35%;
@@ -396,6 +414,13 @@ header {
   .thesis-sidebar-content {
     padding-left: 16px;
     width: 100%;
+  }
+  .thesis-side-container h3 {
+    font-size: 1rem;
+  }
+  .thesis-side-container p {
+    font-size: 0.70rem;
+    line-height: 1;
 }
 }
 
